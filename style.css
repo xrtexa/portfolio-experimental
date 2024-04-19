@@ -90,6 +90,10 @@ nav a {
     text-align: justify;
 }
 
+.welcome-txt, .welcome-img {
+    min-width: 200px;
+}
+
 .welcome-img img {
     width: clamp(250px, 250px, 400px);
     border-radius: 50%;
