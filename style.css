@@ -130,7 +130,6 @@ nav a {
     border: 1px solid var(--accent-color);
 }
 
-
 /* welcome-section */
 
 /* projects */
@@ -150,6 +149,7 @@ nav a {
     justify-content: center;
     align-items: center;
     gap: 5rem;
+    margin: 3rem 0;
 }
 
 .project-img, .project-txt {
@@ -225,6 +225,10 @@ nav a {
         .project-txt {
             width: 100%;
         }
+
+    .project-wrapper {
+        gap: 3rem;
+    }
 
     .left-right, .right-left {
         gap: 2rem;
