@@ -172,9 +172,10 @@ nav a:hover, nav a:active {
 
 /* mobile view */
 
-@media (max-width: 480px) {
-    footer {
+@media (max-width: 480px) and (orientation: landscape) {
+    .container:first-of-type {
         width: 100%;
+        height: calc(100vh*3);
     }
 }
 
