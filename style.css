@@ -211,11 +211,18 @@ nav a {
         gap: 2rem;
     }
 
-    .project-card {
-       flex-direction: column;
-       gap: 2rem;
+    
+    .left-right, .right-left {
+        gap: 2rem;
     }
 
+    .left-right {
+       flex-direction: column; 
+    }
+
+    .right-left {
+        flex-direction: column-reverse;
+    }
 }
 
 /* tablet view */
