@@ -31,17 +31,15 @@
 
 footer {
     background-color: var(--text-color);
-    content: var(--background-color);
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
     text-align: center;
+    padding: 1rem;
     width: 100%;
-    
 }
 
-footer a {
+footer * {
     text-decoration: none;
     color: var(--background-color);
 }
