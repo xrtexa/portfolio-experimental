@@ -86,17 +86,26 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
-    text-align: justify;
 }
 
-.welcome-txt, .welcome-img {
-    min-width: 200px;
+.welcome-section-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.welcome-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-img, .welcome-txt {
+    padding: 0 5rem 0 ;
 }
 
 .welcome-img img {
-    width: clamp(250px, 250px, 400px);
-    border-radius: 50%;
+    width: 250px;
+    border-radius: 100%;
 }
 
 .profile-link-container {
@@ -141,6 +150,10 @@ nav a {
     justify-content: center;
     align-items: center;
     gap: 5rem;
+}
+
+.project-img, .project-txt {
+    width: 50%;
 }
 
 .project-img img {
@@ -189,16 +202,7 @@ nav a {
 
 /* tablet view */
 
-@media (min-width: 816px) {
-    .welcome-txt {
-            width: 600px;
-        }
-    
-        .welcome-img img {
-            max-width: 250px;
-            border-radius: 50%;
-        }
-}
+
 
 @media (max-width: 816px) {
 
@@ -210,12 +214,17 @@ nav a {
         display: none;
     }
 
-    #welcome-section {
-        flex-direction: column-reverse;
-        gap: 2rem;
-    }
+        .welcome-section-wrapper {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 5rem;
+        }
 
-    
+        .project-img,
+        .project-txt {
+            width: 100%;
+        }
+
     .left-right, .right-left {
         gap: 2rem;
     }
