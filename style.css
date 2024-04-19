@@ -122,7 +122,6 @@ nav a {
     border: 1px solid var(--text-color);
     border-radius: 50px;
     text-decoration: none;
-    width: 100%;
 }
 
 .profile-link-container a:hover {
@@ -181,6 +180,7 @@ nav a {
     border: 1px solid var(--background-color);
     border-radius: 50px;
     text-decoration: none;
+    width: 100%;
 }
 
 .project-txt a:hover {
