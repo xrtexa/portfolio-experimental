@@ -169,7 +169,7 @@ nav a:hover, nav a:active {
 
 @media (max-width: 816px) {
     .container:first-of-type {
-        padding-top: 5rem;
+        padding: 3rem 2rem 3rem;
     }
     
     #navbar {
@@ -188,6 +188,7 @@ nav a:hover, nav a:active {
 /* mobile view */
 
 @media (max-width: 480px) {
+    
     #navbar {
         display: none;
     }
