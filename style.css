@@ -24,9 +24,10 @@
 
 .container {
     width: 100%;
+    min-width: 240px;
     min-height: 100vh;
     padding: 4rem 2rem 2rem;
-    min-width: 480px;
+    
 }
 
 footer {
