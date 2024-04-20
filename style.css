@@ -20,8 +20,21 @@
 }
 
 * a {
-    display: block;
-        text-decoration: none;
+    text-decoration: none;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--accent-color);
+
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--background-color);
 }
 
 .container {
@@ -32,19 +45,17 @@
 }
 
 footer {
+    padding: 1rem;
+}
+
+footer, footer a {
     background-color: var(--text-color);
     color: var(--background-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
     text-align: center;
-    width: 100%;
 }
 
 footer a {
     text-decoration: underline;
-    color: var(--background-color);
 }
 
 footer a:hover {
@@ -59,7 +70,7 @@ footer a:hover {
     justify-content: flex-end;
     align-items: center;
     width: 100%;
-    padding: 0.5rem;
+    padding: 1rem;
     position: fixed;
     z-index: 9999;
 }
@@ -81,6 +92,12 @@ nav a {
     background-color: var(--accent-color);
 }
 
+nav svg {
+    width: 50px;
+    height: 30px;
+    display: none;
+}
+
 /* navbar */
 
 /* welcome-section */
@@ -89,19 +106,13 @@ nav a {
     background-color: var(--background-color);
     color: var(--text-color);
     display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
 }
 
-.welcome-img {
-    display: flex;
-        justify-content: center;
-        align-items: center;
-}
-
-.welcome-img, .welcome-txt {
-    width: 40vw;
+.welcome-txt {
+    width: 480px;
 }
 
 .welcome-img img {
@@ -109,8 +120,7 @@ nav a {
     border-radius: 100%;
 }
 
-
-.welcome-txt p {
+.welcome-txt p, .welcome-txt h2 {
     text-align: justify;
     margin: 1rem 0;
 }
@@ -120,6 +130,7 @@ nav a {
     justify-content: flex-start;
     align-items: center;
     gap: 1rem;
+    margin: 1rem 0;
 }
 
 .profile-link-container a {
@@ -127,7 +138,6 @@ nav a {
     padding:  var(--button-padding);
     border: 1px solid var(--text-color);
     border-radius: 50px;
-
 }
 
 .profile-link-container a:hover {
@@ -214,9 +224,15 @@ nav a {
         padding: 3rem 2rem;
     }
 
-    #navbar {
+    .nav-link {
         display: none;
     }
+
+    nav svg {
+        display: block;
+    }
+
+
 
     .welcome-img, .welcome-txt, 
     .project-img, .project-txt {
