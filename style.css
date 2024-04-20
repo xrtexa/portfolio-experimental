@@ -93,7 +93,7 @@ nav a {
 }
 
 nav svg {
-    width: 1rem;
+    width: 1.5rem;
     display: none;
 }
 
@@ -233,7 +233,7 @@ nav svg {
     }
 
     .welcome-txt h1 {
-        font-size: smaller;
+        font-size: 1.8rem;
     
     }
 
