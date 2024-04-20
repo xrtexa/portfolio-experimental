@@ -275,7 +275,7 @@ footer svg {
 
 @media (max-width: 860px) {
 
-    .containe:first-of-type {
+    .container:first-of-type {
         padding: 6rem 2rem;
     }
     
