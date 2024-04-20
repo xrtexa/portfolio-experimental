@@ -275,6 +275,9 @@ footer svg {
 
 @media (max-width: 860px) {
 
+    .containe:first-of-type {
+        padding: 4rem 2rem;
+    }
     
     .nav-link {
         display: none;
