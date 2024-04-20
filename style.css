@@ -220,8 +220,8 @@ nav svg {
 
 @media (max-width: 860px) {
 
-    .container{
-        padding: 3rem 2rem;
+    .container:first-of-type {
+        padding: 4rem 2rem;
     }
 
     .nav-link {
@@ -232,6 +232,16 @@ nav svg {
         display: block;
     }
 
+    .welcome-txt h1 {
+        font-size: smaller;
+    
+    }
+
+    .welcome-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
 
     .welcome-img, .welcome-txt, 
