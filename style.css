@@ -44,24 +44,6 @@
     padding: 2rem;
 }
 
-footer {
-    padding: 1rem;
-}
-
-footer, footer a {
-    background-color: var(--text-color);
-    color: var(--background-color);
-    text-align: center;
-}
-
-footer a {
-    text-decoration: underline;
-}
-
-footer a:hover {
-    color: var(--highlight-color);
-}
-
 /* navbar */
 
 #navbar {
@@ -107,11 +89,11 @@ nav svg {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
+    gap: 6rem;
 }
 
 .welcome-txt {
-    width: 480px;
+    width: 500px;
 }
 
 .welcome-img img {
@@ -124,22 +106,14 @@ nav svg {
     margin: 1rem 0;
 }
 
-.profile-link-container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 1rem;
-    margin: 1rem 0;
-}
-
-.profile-link-container a {
+.welcome-txt a {
     color: var(--text-color);
     padding:  var(--button-padding);
     border: 1px solid var(--text-color);
     border-radius: 50px;
 }
 
-.profile-link-container a:hover {
+.welcome-txt a:hover {
     color: var(--background-color);
     background-color: var(--accent-color);
     border: 1px solid var(--accent-color);
@@ -159,7 +133,7 @@ nav svg {
     margin: 3rem 0;
 }
 
-.project-card {
+.project-tile {
     display: flex;  
     justify-content: center;
     align-items: center;
@@ -209,27 +183,109 @@ nav svg {
 
 #contact {
     background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 500px;
+    text-align: justify;
+    color: var(--text-color);
+}
+
+.contact-wrapper a {
+    margin: 1rem 0 0;
+    width: 100%;
+    text-align: center;
+    color: var(--text-color);
+    padding: var(--button-padding);
+    border-radius: 50px;
+    border: 1px solid var(--text-color);
+}
+
+.contact-wrapper a:hover {
+    color: var(--background-color);
+    background-color: var(--accent-color);
+    border: 1px solid var(--accent-color);
 }
 
 /* contact */
 
-/* tablet view */
+/* footer */
 
+footer {
+    width: 100%;
+    min-height: 50vh;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+footer,
+footer a {
+    background-color: var(--text-color);
+    color: var(--background-color);
+    text-align: center;
+}
+
+footer i {
+    display: block;
+}
+
+.profile-link-container, .footer-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; 
+}
+
+footer a:last-of-type {
+    text-decoration: underline;
+}
+
+footer a:last-of-type:hover {
+    color: var(--highlight-color);
+}
+
+footer svg {
+    width: 2rem;
+    height: 2rem;
+}
+
+.footer-bottom {
+    flex-direction: column;
+    width: 100%;
+}
+
+
+/* footer */
+
+/* tablet view */
 
 
 @media (max-width: 860px) {
 
-    .container:first-of-type {
-        padding: 4rem 2rem;
-    }
-
-
+    
     .nav-link {
         display: none;
     }
 
     nav svg {
         display: block;
+    }
+
+    #welcome-section {
+        gap: 3rem;
     }
 
     .welcome-txt h1 {
@@ -245,13 +301,13 @@ nav svg {
 
 
     .welcome-img, .welcome-txt, 
-    .project-img, .project-txt {
+    .project-img, .project-txt, .contact-wrapper {
             width: 100%;
             padding: 0;
         }
 
-    .project-card, #welcome-section {
-        gap: 2rem;
+    .project-tile  {
+        gap: 1rem;
     }
 
     .left-right {
