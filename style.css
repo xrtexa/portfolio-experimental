@@ -93,8 +93,7 @@ nav a {
 }
 
 nav svg {
-    width: 50px;
-    height: 30px;
+    width: 1rem;
     display: none;
 }
 
@@ -223,6 +222,7 @@ nav svg {
     .container:first-of-type {
         padding: 4rem 2rem;
     }
+
 
     .nav-link {
         display: none;
