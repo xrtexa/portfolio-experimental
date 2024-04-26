@@ -7,8 +7,8 @@
     --accent-color: #8C735B;
     --alternative-color: #BAA898;
     --highlight-color: #D9C6AD;
-    --notification-color: #5C5047;
-    --button-padding: 0.5rem 1rem;;
+    --notification-color: #46392f;
+    --button-padding: 7px 10px ;
 }
 
 * {
@@ -23,13 +23,17 @@
     text-decoration: none;
 }
 
-
 ::-webkit-scrollbar {
     width: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: var(--text-color);
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--notification-color);
 
 }
 
@@ -41,7 +45,7 @@
     width: 100%;
     min-width: 200px;
     min-height: 100vh;
-    padding: 2rem;
+    padding: 6rem 2rem;
 }
 
 /* navbar */
@@ -76,6 +80,7 @@ nav a {
 
 nav svg {
     width: 1.5rem;
+    height: 1.5rem;
     display: none;
 }
 
@@ -92,32 +97,36 @@ nav svg {
     gap: 6rem;
 }
 
-.welcome-txt {
+.welcome-left {
     width: 500px;
 }
 
-.welcome-img img {
-    width: 250px;
-    border-radius: 100%;
-}
-
-.welcome-txt p, .welcome-txt h2 {
+.welcome-left p{
     text-align: justify;
-    margin: 1rem 0;
+    margin: 1rem 0 1.5rem;
 }
 
-.welcome-txt a {
+.welcome-left a {
     color: var(--text-color);
-    padding:  var(--button-padding);
+    padding: var(--button-padding);
+    display: block;
+    width: 100%;
     border: 1px solid var(--text-color);
     border-radius: 50px;
+    text-align: center;
 }
 
-.welcome-txt a:hover {
+.welcome-left a:hover {
     color: var(--background-color);
     background-color: var(--accent-color);
     border: 1px solid var(--accent-color);
 }
+
+.welcome-right img {
+    width: 250px;
+    border-radius: 100%;
+}
+
 
 /* welcome-section */
 
@@ -129,9 +138,6 @@ nav svg {
     text-align: center;
 }
 
-#projects h1 {
-    margin: 3rem 0;
-}
 
 .project-tile {
     display: flex;  
@@ -139,6 +145,14 @@ nav svg {
     align-items: center;
     gap: 5rem;
     margin: 3rem 0;
+}
+
+.left-right {
+    flex-direction: row;  
+}
+
+.right-left {
+    flex-direction: row-reverse;  
 }
 
 .project-img, .project-txt {
@@ -156,11 +170,11 @@ nav svg {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 1rem;
 }
 
 .project-txt p {
     text-align: justify;
+    margin: 1rem 0;
 }
 
 .project-txt a {
@@ -222,7 +236,7 @@ nav svg {
 
 footer {
     width: 100%;
-    min-height: 50vh;
+    min-height: 80vh;
     padding: 3rem 0;
     display: flex;
     flex-direction: column;
@@ -236,10 +250,7 @@ footer a {
     background-color: var(--text-color);
     color: var(--background-color);
     text-align: center;
-}
 
-footer i {
-    display: block;
 }
 
 .profile-link-container, .footer-bottom {
@@ -249,17 +260,21 @@ footer i {
     gap: 1rem; 
 }
 
+footer a {
+    padding: 1rem;
+}
+
 footer a:last-of-type {
     text-decoration: underline;
 }
 
 footer a:last-of-type:hover {
-    color: var(--highlight-color);
+    transform: scale(1);
 }
 
 footer svg {
-    width: 2rem;
-    height: 2rem;
+    width: 50px;
+    height: calc(width);
 }
 
 .footer-bottom {
@@ -267,58 +282,57 @@ footer svg {
     width: 100%;
 }
 
-
 /* footer */
+
+/* wide view */
+
+@media (min-width: 900px;) {
+
+
+* p {
+        font-size: 2rem;
+    }
+
+}
+
+/* wide view */
 
 /* tablet view */
 
-
-@media (max-width: 860px) {
-
-    .container:first-of-type {
-        padding: 6rem 2rem;
-    }
+@media (max-width: 810px) {
     
-    .nav-link {
-        display: none;
-    }
-
     nav svg {
         display: block;
     }
 
+    .nav-link {
+        display: none;
+    }
+
     #welcome-section {
         gap: 3rem;
+        flex-direction: column-reverse;
     }
 
-    .welcome-txt h1 {
+    .welcome-left h1 {
         font-size: 1.8rem;
-    
     }
 
-    .welcome-img {
+    .welcome-right {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-
-    .welcome-img, .welcome-txt, 
+    .welcome-img, .welcome-left, 
     .project-img, .project-txt, .contact-wrapper {
             width: 100%;
             padding: 0;
         }
 
-    .project-tile  {
+    .project-tile {
         gap: 1rem;
-    }
-
-    .left-right {
-       flex-direction: column; 
-    }
-
-    .right-left, #welcome-section {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 }
 
@@ -328,6 +342,10 @@ footer svg {
 
 @media (max-width: 480px)  {
 
+    * p {
+        font-size: 0.8rem;
+    }
 }
 
 /* mobile view */
+
