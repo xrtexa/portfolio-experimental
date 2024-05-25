@@ -154,7 +154,7 @@ nav svg {
 
 .welcome-right img {
     width: 100%;
-    aspect-ratio: 7/8.5;
+    aspect-ratio: 7/8;
     object-fit: cover;
 }
 
@@ -163,6 +163,10 @@ nav svg {
     #welcome {
         grid-template-columns: 1fr;
         gap: 1rem;
+    }
+
+    .welcome-right img {
+        max-height: 400px;
     }
 
     .welcome-left {
@@ -199,6 +203,12 @@ nav svg {
 @media (max-width: 810px) {
     .project-tile {
         grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0;
+    }
+
+    .project-left img {
+        place-content: end;
     }
 }
 
