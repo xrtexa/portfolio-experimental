@@ -46,7 +46,6 @@
 
 * h1  {
     font-weight: 600;
-    
 }
 
 * h2 {
@@ -66,7 +65,6 @@
 }
 
 /* separator */
-
 
 /* navbar */
 
@@ -168,6 +166,10 @@ nav svg {
     #welcome h1 {
         font-size: 1.7rem;
     }
+
+    .welcome-left p {
+    margin-bottom: 1rem;
+}
 
     .welcome-right img {
         max-height: 400px;
