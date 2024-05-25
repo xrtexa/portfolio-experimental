@@ -166,7 +166,7 @@ nav svg {
     }
 
     #welcome h1 {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
 
     .welcome-left p {
@@ -338,9 +338,6 @@ footer svg {
 @media (min-width: 900px;) {
 
 
-* p {
-        font-size: 2rem;
-    }
 
 }
 
@@ -367,9 +364,6 @@ footer svg {
 
 @media (max-width: 480px)  {
 
-    * p {
-        font-size: 0.8rem;
-    }
 }
 
 /* mobile view */
