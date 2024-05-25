@@ -41,7 +41,7 @@
     width: 100%;
     min-width: 200px;
     min-height: 100vh;
-    padding: 4rem 3rem;
+    padding: calc(2rem + 2rem) 3rem;
 }
 
 * h1  {
@@ -165,6 +165,10 @@ nav svg {
         gap: 0;
     }
 
+    #welcome h1 {
+        font-size: 1.8rem;
+    }
+
     .welcome-right img {
         max-height: 400px;
     }
@@ -203,7 +207,7 @@ nav svg {
 @media (max-width: 810px) {
     .project-tile {
         grid-template-columns: 1fr;
-        gap: 0;
+        gap: 1rem;
     }
 
     .project-left img {
