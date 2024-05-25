@@ -162,7 +162,7 @@ nav svg {
 
     #welcome {
         grid-template-columns: 1fr;
-        gap: 1rem;
+        gap: 0;
     }
 
     .welcome-right img {
@@ -203,7 +203,6 @@ nav svg {
 @media (max-width: 810px) {
     .project-tile {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
         gap: 0;
     }
 
