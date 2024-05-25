@@ -41,7 +41,7 @@
     width: 100%;
     min-width: 200px;
     min-height: 100vh;
-    padding: 3rem;
+    padding: 4rem 3rem;
 }
 
 * h1  {
@@ -56,6 +56,16 @@
 * h3 {
     font-weight: 400;
 }
+
+/* separator */
+
+.separator h1 {
+    text-align: center;
+    padding-top: 4rem;
+    min-height: 20vh;
+}
+
+/* separator */
 
 
 /* navbar */
@@ -152,7 +162,7 @@ nav svg {
 
     #welcome {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 1rem;
     }
 
     .welcome-left {
@@ -169,11 +179,6 @@ nav svg {
 
 /* welcome-section */
 
-.separator h1 {
-    text-align: center;
-    padding: 4rem 0;
-    opacity: 80%;
-}
 
 /* projects */
 
@@ -181,7 +186,6 @@ nav svg {
     background-color: var(--background-color);
     color: var(--text-color);
 }
-
 
 .project-tile {
     display: grid;  
@@ -195,31 +199,30 @@ nav svg {
 @media (max-width: 810px) {
     .project-tile {
         grid-template-columns: 1fr;
-
     }
 }
 
-
-.project-img img {
+.project-left img {
     width: 100%;
     aspect-ratio: 16/9;
     object-fit: cover;
+    border: 1px solid black;
 }
 
-.project-txt p {
+.project-right p {
     text-align: justify;
     margin: 1rem 0;
 }
 
-.project-txt a {
+.project-right a {
     color: var(--text-color);
     padding: var(--button-padding);
     border: 1px solid var(--text-color);
-    display: block;
+    display: inline-block;
     text-align: center;
 }
 
-.project-txt a:hover {
+.project-right a:hover {
     color: var(--background-color);
     background-color: var(--text-color);
     border: 1px solid var(--text-color);
