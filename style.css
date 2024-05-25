@@ -41,11 +41,12 @@
     width: 100%;
     min-width: 200px;
     min-height: 100vh;
-    padding: calc(2rem + 2rem) 3rem;
+    padding: calc(4rem + 10px) 3rem;
 }
 
 * h1  {
     font-weight: 600;
+    
 }
 
 * h2 {
@@ -58,13 +59,14 @@
 
 /* separator */
 
-.separator h1 {
+.separator h2 {
     text-align: center;
-    padding-top: 4rem;
+    padding-top: calc(4rem + 10px );
     min-height: 20vh;
 }
 
 /* separator */
+
 
 /* navbar */
 
@@ -164,12 +166,13 @@ nav svg {
     }
 
     #welcome h1 {
-        font-size: 1.7rem;
+        font-size: 1.6rem;
     }
 
     .welcome-left p {
+    margin-top: 0;
     margin-bottom: 1rem;
-}
+    }
 
     .welcome-right img {
         max-height: 400px;
@@ -182,8 +185,6 @@ nav svg {
     .welcome-right {
         order: 1;
     }
-
-
 }
 
 
@@ -221,7 +222,7 @@ nav svg {
     width: 100%;
     aspect-ratio: 16/9;
     object-fit: cover;
-    border: 1px solid black;
+    border: 2px solid black;
 }
 
 .project-right p {
