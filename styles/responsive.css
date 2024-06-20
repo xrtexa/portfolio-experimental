@@ -34,7 +34,8 @@
             }
 
             footer {
-                    padding: 80px 2rem 0;
+                min-height: 80vh;
+                    padding: 80px 1rem;
             }
 
 }
