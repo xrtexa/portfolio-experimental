@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+:root {
+    scroll-behavior: smooth;
+    --background-color: white;
+    --text-color: black;
+    --notification-color: black;
+    --button-padding: 0.3rem 1rem ;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.2s ease-in;
+}
+
+h1, h2, h3, p, a {
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins';
+    line-height: 2.5rem;
+}
+
+p, a {
+    font-family: 'Raleway';
+    line-height: 1.5rem;
+}
+
+.container:first-of-type {
+    padding: 0;
+}
+
+.container {
+    padding: 100px 0 0;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 4rem;
+}
+
+/** links **/
+
+.button-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.button-link {
+    font-family: 'Raleway';
+    color: white;
+    background-color: #294122;
+    padding: 0.5rem 1.5rem;
+    border: 1px solid #294122;
+    border-radius: 2px;
+}
+
+.button-link:hover {
+    color: white;
+    background-color: #517e43;
+    border: 1px solid #517e43;
+}
+
+/** links **/
+
+
+/* welcome */
+
+#hero {
+    min-height: 650px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 3rem;
+}
+
+.hero-txt h1 {
+    margin: 1rem 0;
+}
+
+.hero-txt h1:first-of-type {
+    font-size: 2.5rem;
+}
+
+.hero-txt h1:nth-of-type(2) {
+    font-size: 2rem;
+}
+
+.hero-txt p {
+    margin: 1rem 0;
+}
+
+.hero-right {
+    display: flex;
+    justify-content: end;
+}
+
+.hero-right img {
+    width: 90%;
+}  
+
+
+/* welcome-section */
+
+/* start about section */
+
+
+
+.about {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+    gap: 3rem;
+    padding-right: 3rem;
+}
+
+.about-left {
+    background-color: #ffffff;
+    opacity: 0.8;
+    background-image: linear-gradient(#294122 1px, transparent 1px), linear-gradient(to right, #294122 1px, #ffffff 1px);
+    background-size: 16px 16px;;
+    background-position: center;
+}
+
+.about-right {
+    padding: 2rem 0;
+}
+
+.about-top {
+    margin: 0 0 2rem;
+}
+
+.about h1 {
+    font-size: 2.3rem;
+    margin: 0 0 1rem;
+}
+
+
+.about p {
+    font-size: 18px;
+    line-height: 2rem;
+}
+
+
+
+/* end about section */
+
+
+/* start portfolio section */
+
+#project {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.project-title {
+    margin: 0 0 2rem;
+    text-align: center;
+}
+
+.project-card-wrapper {
+    display: grid;  
+    grid-template-columns: repeat(2, minmax(0px, 1fr));
+    gap: 3rem;
+
+}
+
+.project-card {
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px lightgrey;
+}
+
+.project-card:hover {
+    border: 1px solid #294122;
+}
+
+.project-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-txt {
+    padding: 2rem;
+}
+
+.project-role {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.project-role p,
+.project-txt h2 {
+    margin: 0 0 0.5rem;
+}
+
+.project-txt p {
+    margin: 0 0 1rem;
+}
+
+.project-role p {
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 0.9rem;
+    color: rgb(59, 59, 59);
+}
+
+/* projects */
+
+/* contact */
+
+footer {
+    margin: 100px 0 0;
+    padding: 80px 80px 0;
+    min-height: 80vh;
+    width: 100%;
+    background-color: #294122;
+}
+
+#contact {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns:1fr 2fr 1fr;
+}
+
+#contact a {
+    text-decoration: underline;
+}
+
+#contact a, #contact p {
+    font-family: 'Roboto';
+    color: white;
+    margin: 1.5rem;
+}
+
+.column-1, .column-2, .column-3 {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* contact */
+

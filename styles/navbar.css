@@ -1,0 +1,96 @@
+/* start navbar desktop */
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 1);
+    height: 70px;
+    box-shadow: 0 0 10px lightgrey;
+}
+
+.navbar {
+    padding: 0 2rem;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-desktop {
+    display: flex;
+}
+
+.nav-mobile, #nav-toggle {
+    display: none;
+}
+
+.navbar svg {
+    height: 30px;
+    width: 30px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    padding: 24px;
+    font-family: 'Raleway';
+    display: block;
+}
+
+
+
+
+.nav-link:hover {
+    background-color: rgb(240, 236, 236);
+}
+
+/* end navbar desktop */
+
+
+/* start navbar mobile */
+
+@media (max-width: 900px) {
+    .nav-desktop {
+        display: none;
+    }
+
+    .nav-mobile {
+        display: flex;
+    }
+
+    .nav-link {
+        width: 100%;
+    }
+
+        .nav-close {
+            padding: 24px;
+            display: block;
+        }
+
+    .nav-mobile-link {
+            height: 100%;
+            background-color: white;
+            flex-direction: column;
+            align-items: flex-start;
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 300px;
+            z-index: 11;
+            box-shadow: 0 0 10px lightgrey;
+
+    }
+
+    #nav-toggle:checked ~ .nav-mobile-link {
+        right: 0;
+    }
+
+
+
+}

@@ -1,65 +1,40 @@
-* h1 {
-    font-weight: 600;
-    font-size: 1.5rem;
-}
-
-* h2 {
-    font-weight: 500;
-    font-size: 1.3rem;
-}
-
-* h3 {
-    font-weight: 400;
-    font-size: 1.1rem;
-}
-
-* p {
-    font-size: 0.9rem;
-}
-
-
-
-@media (max-width: 800px) {
-    nav .burger {
-        display: block;
+@media (min-width:1367px) {
+    #hero {
+        height: 800px;
     }
+}
 
-    .nav-link {
-        display: none;
-    }
-    
-    #welcome {
-            grid-template-columns: 1fr;
-            gap: 0;
-        }
-    
-        #welcome h1 {
-            font-size: 1.5rem;
-        }
-    
-        .welcome-right img {
-            width: 100%;
-        }
-    
-        .welcome-left {
+@media (max-width: 750px) {
+        #hero,
+            .project-card-wrapper,
+            .about {
+                grid-template-columns: 1fr;
+            }
+
+        .hero-left {
             order: 2;
         }
-    
-        .welcome-right {
+
+        .hero-right {
+            justify-content: center;
             order: 1;
+
         }
 
-        .project-tile {
-            grid-template-columns: 1fr;
-            gap: 1rem;
-        }
-        
-    
-     
-}
+        .hero-right img {
 
-@media (max-width: 810px) {
-        .contact-wrapper {
-                width: 100%;
+        }
+
+            .container:first-of-type {
+                padding: 100px 0 0;
             }
+
+            #contact {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            footer {
+                    padding: 80px 2rem 0;
+            }
+
 }
