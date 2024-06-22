@@ -30,7 +30,7 @@
             }
 
             #contact {
-                grid-template-columns: 100px 100px;
+                grid-template-columns: 0.5fr 0.5fr;
                 grid-template-rows: 1fr 1fr;
             }
 
