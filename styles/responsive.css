@@ -30,8 +30,8 @@
             }
 
             #contact {
-                grid-template-columns: 0.5fr 0.5fr;
-                grid-template-rows: 1fr 1fr;
+                grid-template-columns: 0.3 0.5fr;
+    
             }
 
             footer {
